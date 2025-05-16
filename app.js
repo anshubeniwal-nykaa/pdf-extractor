@@ -10,8 +10,12 @@ const port = 3000;
 // File upload config
 const upload = multer({ dest: "uploads/" });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the PDF Extraction API");
+});
+
 // Routes
-app.use("/api/invoice", upload.single("file"), invoiceRoutes);
+app.use("/api/pdf", upload.single("file"), invoiceRoutes);
 
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);

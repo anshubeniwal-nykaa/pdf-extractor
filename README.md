@@ -1,46 +1,25 @@
-# OCR Application
+# PDF Extractor
 
-This is an OCR (Optical Character Recognition) application that reads PDFs and extracts text from them. The application is built using Node.js and provides a simple interface for processing PDF files.
+A Node.js tool to extract text and structured data from PDF file.
 
-## Project Structure
+## Features
 
-```
-ocr-app
-├── src
-│   ├── index.js          # Entry point of the application
-│   └── utils
-│       └── pdfReader.js  # Utility function to read PDF files
-├── package.json          # NPM configuration file
-└── README.md             # Project documentation
-```
+- Extract plain text from PDF documents
+- Extract tables and structured data (where possible)
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository and install dependencies:
 
-   ```
-   git clone <repository-url>
-   cd ocr-app
-   ```
-
-2. Install the dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-
-To start the application, run the following command:
-
+```bash
+git clone https://github.com/anshubeniwal-nykaa/pdf-extractor.git
+cd pdf-extractor
+npm install
 ```
-node src/index.js
-```
-
-You can then send requests to the server to process image PDFs and extract text.
 
 ## Contributing
 
-Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
+Contributions are welcome! Please open issues or submit pull requests.
 
 ## License
 
